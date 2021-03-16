@@ -1,4 +1,4 @@
-source /usr/local/share/antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 #export WORKON_HOME="$HOME/.virtualenvs"
 #source /usr/local/bin/virtualenvwrapper.sh
 
@@ -42,5 +42,7 @@ export EDITOR="$VISUAL"
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
-# Created by `userpath` on 2020-06-04 11:21:00
-export PATH="$PATH:$HOME/.local/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
